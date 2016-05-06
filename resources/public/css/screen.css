@@ -1,7 +1,10 @@
 html,
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Dosis', sans-serif;
     height: 100%;
+  font-family: 'Cutive', serif;
+  background-image: url("https://goo.gl/photos/wgonR2sf6mKS9PrKA");
+  background-color: #000000;
 }
 .navbar {
   margin-bottom: 10px;

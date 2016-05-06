@@ -5,4 +5,7 @@ CREATE TABLE books
  title VARCHAR(50),
  publisher VARCHAR(30),
  year INTEGER,
- ISBN VARCHAR(50);
+ ISBN VARCHAR(50),
+ genre VARCHAR(30),
+ read BOOLEAN,
+ stars INTEGER)
