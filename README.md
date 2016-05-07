@@ -1,6 +1,6 @@
 # my-shelves
 
-generated using Luminus version "2.9.10.47"
+generated using Luminus version "2.9.10.48"
 
 FIXME
 

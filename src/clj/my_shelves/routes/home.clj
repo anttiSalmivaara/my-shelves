@@ -15,12 +15,12 @@
       :title v/required)))
 
 (defn add-book! [{:keys [params]}]
-  (if-let [errors (validate-book params)]
-    (-> (response/found "/")
-        (assoc :flash (assoc params :errors errors)))
+  ;(if-let [errors (validate-book params)]
+  ;  (-> (response/found "/")
+  ;      (assoc :flash (assoc params :errors errors)))
     (do
-      (db/add-book!)
-      (response/found "/add"))))
+      (db/add-book! params)
+      (response/found "/add")));)
 
 (defn delete-book! [{:keys [params]}]
   (do

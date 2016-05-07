@@ -1,13 +1,13 @@
 -- :name add-book! :! :n
 -- :doc creates a new user record
 INSERT INTO books
-(author_first_name, author_last_name, title, publisher, year, ISBN, genre, read, stars)
-VALUES (:author_first_name, :author_last_name, :title, :publisher, :year, :ISBN, :genre, :read, :stars)
+(author_first_name, author_last_name, title, publisher, year_of_publishing, ISBN, genre, read, stars)
+VALUES (:author_first_name, :author_last_name, :title, :publisher, :year_of_publishing, :ISBN, :genre, :read, :stars)
 
 -- :name update-book! :! :n
 -- :doc update an existing user record
 UPDATE books
-SET author_first_name = :author_first_name, author_last_name = :author_last_name, title = :title, publisher = :publisher, year = :year, ISBN = :ISBN, genre = :genre, read = :read, stars = :stars
+SET author_first_name = :author_first_name, author_last_name = :author_last_name, title = :title, publisher = :publisher, year_of_publishing = :year_of_publishing, ISBN = :ISBN, genre = :genre, read = :read, stars = :stars
 WHERE id = :id
 
 -- :name get-all-books! :? :*

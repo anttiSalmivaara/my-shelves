@@ -1,10 +1,7 @@
 html,
 body {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 100%;
-  font-family: 'Cutive', serif;
-  background-image: url("https://goo.gl/photos/wgonR2sf6mKS9PrKA");
-  background-color: #000000;
 }
 .navbar {
   margin-bottom: 10px;
@@ -32,13 +29,5 @@ body {
   .navbar-nav .nav-link + .nav-link {
     margin-left: 1rem;
   }
-}
-
-h1 {
-  font-family: 'Cutive', serif;
-}
-
-p {
-  font-family: 'Dosis' sans-serif;
 }
 
