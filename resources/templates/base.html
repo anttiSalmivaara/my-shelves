@@ -10,7 +10,7 @@
     {% style "/assets/font-awesome/css/font-awesome.min.css" %}
 
     {% style "/css/screen.css" %}
-    {% style "https://fonts.googleapis.com/css?family=Cutive|Dosis" %}
+    <link href='https://fonts.googleapis.com/css?family=Cutive|Dosis' rel='stylesheet' type='text/css'>
   </head>
   <body>
       <!-- navbar -->
@@ -31,9 +31,15 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="{{servlet-context}}/about"
-                         class="nav-link{% ifequal page "about.html" %} active{%endifequal%}">
-                      about
+                      <a href="{{servlet-context}}/my-books"
+                         class="nav-link{% ifequal page "view.html" %} active{%endifequal%}">
+                      my-books
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{servlet-context}}/add"
+                         class="nav-link{% ifequal page "add.html" %} active{%endifequal%}">
+                      add
                       </a>
                   </li>
               </ul>

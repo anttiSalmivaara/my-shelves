@@ -22,7 +22,7 @@
       (db/add-book!)
       (response/found "/add"))))
 
-(defn delete-book! [{:keys [params]}]
+(defn delete-book! [{:keys [params]}]
   (do
     (db/delete-book!)
     (response/found "/my-books")))
@@ -47,12 +47,16 @@
     "view.html"
     {:books (db/get-all-books!)}))
 
+(defn add-page [{:keys [params]}]
+  (layout/render
+    "add.html"))
+
 (defroutes home-routes
-  (GET "/" request (home-page))
-  (GET "/add" [] (add-page))
-  (POST "/add" request (add-book!))
-  (GET "/my-books" request (my-books-page))
-  (GET "/my-books/:id" request (get-book!))
-  (POST "/my-books/:id" request (update-book!))
-  (POST "/delete/:id" request (delete-book!)))
+  (GET "/" request (home-page request))
+  (GET "/add" request (add-page request))
+  (POST "/add" request (add-book! request))
+  (GET "/my-books" request (my-books-page request))
+  (GET "/my-books/:id" request (get-book! request))
+  (POST "/my-books/:id" request (update-book! request))
+  (POST "/delete/:id" request (delete-book! request)))
 
