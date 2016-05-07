@@ -18,6 +18,7 @@
   ;(if-let [errors (validate-book params)]
   ;  (-> (response/found "/")
   ;      (assoc :flash (assoc params :errors errors)))
+
     (do
       (db/add-book! params)
       (response/found "/add")));)

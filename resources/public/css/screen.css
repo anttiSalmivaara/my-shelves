@@ -1,7 +1,14 @@
 html,
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Dosis', sans-serif;
     height: 100%;
+  font-family: 'Cutive', serif;
+  background-image: url("http://anz.kapsi.fi/20160505_002614.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000000;
+  background-size: 95% 95%;
 }
 .navbar {
   margin-bottom: 10px;
@@ -29,5 +36,19 @@ body {
   .navbar-nav .nav-link + .nav-link {
     margin-left: 1rem;
   }
+}
+
+div.content {
+  background-color: #ffffff;
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Cutive', serif;
+}
+
+p {
+  font-family: 'Dosis' sans-serif;
+  width: 50%;
 }
 
