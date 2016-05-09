@@ -1,7 +1,5 @@
 html,
 body {
-	font-family: 'Dosis', sans-serif;
-    height: 100%;
   font-family: 'Cutive', serif;
   background-image: url("http://anz.kapsi.fi/20160505_002614.jpg");
   background-repeat: no-repeat;
@@ -38,17 +36,88 @@ body {
   }
 }
 
-div.content {
-  background-color: #ffffff;
+.content {
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(238,238,238,0.8);
   width: 80%;
 }
 
-h1 {
-  font-family: 'Cutive', serif;
+ul.books {
+    display: block;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-p {
-  font-family: 'Dosis' sans-serif;
-  width: 50%;
+div.form {
+  display: flex;
+  margin-left: 40px;
 }
+
+input.books {
+  border-radius: 10px;
+  flex-direction: column;
+  text-align: middle;
+  border: none;
+  width: 380px;
+}
+
+p.formradio {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+p.collection {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: middle;
+  width: 400px;
+  height: 45px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+p.stars {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: middle;
+  width: 400px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+p.read {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: middle;
+  width: 400px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+input.spaceradio {
+  float: right;
+  margin-right: 25px;
+  text-align: center;
+}
+
+input.stars {
+  background-color: #ffffff;
+  float: right;
+  margin-right: 25px;
+}
+
+
+
+
+
+
 

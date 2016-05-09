@@ -25,13 +25,13 @@
 
 (defn delete-book! [{:keys [params]}]
   (do
-    (db/delete-book!)
+    (db/delete-book! params)
     (response/found "/my-books")))
 
 (defn get-book! [{:keys [params]}]
-  (do
-    (db/get-book!)
-    (response/found "")))
+  (layout/render
+    "book.html"
+    {:book (db/get-book! params)}))
 
 (defn update-book! [{:keys [params]}]
   (do
